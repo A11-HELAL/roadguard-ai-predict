@@ -127,8 +127,14 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <SiteHeader />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <footer className="border-t border-white/5 py-8 text-center text-xs text-muted-foreground">
+        RoadGuard AI — NTI Graduation Project 2025 · Ahmed Saad · Youssef Alaa · Mahmoud Mohamed ·
+        Ahmed Lotfy
+      </footer>
     </QueryClientProvider>
   );
 }
+
